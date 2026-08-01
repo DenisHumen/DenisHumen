@@ -17,26 +17,35 @@
 
 </div>
 
-## `01` &nbsp; Know About Me
+## <img src="./assets/icons/user.svg" width="22" alt="" /> &nbsp;`01` &nbsp; Know About Me
 
 <table>
 <tr>
-<td width="70%" valign="top">
+<td width="64%" valign="top">
 
-### Hey there, I'm Denis 👋
+### Hey there, I'm Denis <img src="./assets/icons/signal.svg" width="19" alt="" />
 
 I'm a **network & security engineer** who kept sliding down the stack until he was writing the tools himself. I spend my time somewhere between `nftables`, packet dumps and a terminal that has been open for three days.
 
-Most of what I build exists because I refused to do something manually twice. Firewalls that block things while I sleep 🛡️, balancers that route around dead providers 🔀, and node infrastructure that installs itself with one command ⚡.
+Most of what I build exists because I refused to do something manually twice:
 
-Currently in the wired with **The Blackwall** (real-time network defense), **vlb** (multi-provider traffic balancer in Rust) and **OpenCRM**.
+<img src="./assets/icons/shield.svg" width="17" alt="" />&nbsp; **Firewalls** that block things while I sleep<br/>
+<img src="./assets/icons/route.svg" width="17" alt="" />&nbsp; **Balancers** that route around dead providers<br/>
+<img src="./assets/icons/bolt.svg" width="17" alt="" />&nbsp; **Node infrastructure** that installs itself with one command
 
-🐍 Python for logic · 🦀 Rust when it has to survive · 🔷 TypeScript when a human has to look at it · 🐚 Bash when nobody is watching.
+**Currently in the wired with** — [The Blackwall](https://github.com/DenisHumen/The-Blackwall) (real-time network defense) · [vlb](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer) (multi-provider traffic balancer in Rust) · [OpenCRM](https://github.com/DenisHumen/OpenCRM).
+
+<img src="./assets/icons/python.svg" width="16" alt="" />&nbsp; `Python` for logic &nbsp;&nbsp;
+<img src="./assets/icons/rust.svg" width="16" alt="" />&nbsp; `Rust` when it has to survive<br/>
+<img src="./assets/icons/ts.svg" width="16" alt="" />&nbsp; `TypeScript` when a human has to look at it &nbsp;&nbsp;
+<img src="./assets/icons/shell.svg" width="16" alt="" />&nbsp; `Bash` when nobody is watching
 
 </td>
-<td width="30%" align="center" valign="middle">
+<td width="36%" align="center" valign="middle">
 
-<img src="./assets/navi.svg" width="200" alt="Navi" />
+<img src="./assets/lain.png" width="230" alt="Navi" />
+
+<sub><code>layer 07 // connected</code></sub>
 
 </td>
 </tr>
@@ -44,7 +53,7 @@ Currently in the wired with **The Blackwall** (real-time network defense), **vlb
 
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
 
-## `02` &nbsp; Protocol Stack
+## <img src="./assets/icons/layers.svg" width="22" alt="" /> &nbsp;`02` &nbsp; Protocol Stack
 
 <div align="center">
 
@@ -77,7 +86,7 @@ Currently in the wired with **The Blackwall** (real-time network defense), **vlb
 
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
 
-## `03` &nbsp; Signal / Projects
+## <img src="./assets/icons/branch.svg" width="22" alt="" /> &nbsp;`03` &nbsp; Signal / Projects
 
 > Everything here started as *"I'll just automate this real quick."*
 
@@ -85,14 +94,14 @@ Currently in the wired with **The Blackwall** (real-time network defense), **vlb
 <tr>
 <td width="50%" valign="top">
 
-### 🧱 [The Blackwall](https://github.com/DenisHumen/The-Blackwall)
+### <img src="./assets/icons/wall.svg" width="20" alt="" /> [The Blackwall](https://github.com/DenisHumen/The-Blackwall)
 
-Network security management. Real-time traffic monitoring, automatic threat blocking and attack visualization on `Python + React + nftables`. Your digital fortress between the corporate network and the chaos of the Net. **Stay protected, netrunner.** 🌆⚡
+Network security management. Real-time traffic monitoring, automatic threat blocking and attack visualization on `Python + React + nftables`. Your digital fortress between the corporate network and the chaos of the Net. **Stay protected, netrunner.**
 
 </td>
 <td width="50%" valign="top">
 
-### 🔀 [vlb — Virtual Load Balancer](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer)
+### <img src="./assets/icons/route.svg" width="20" alt="" /> [vlb — Virtual Load Balancer](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer)
 
 Lightweight `Rust` balancer that spreads traffic across multiple providers. Small binary, no daemons with opinions, no config file that needs its own documentation.
 
@@ -101,14 +110,14 @@ Lightweight `Rust` balancer that spreads traffic across multiple providers. Smal
 <tr>
 <td width="50%" valign="top">
 
-### ⛓️ [ETHmachine](https://github.com/DenisHumen/ETHmachine)
+### <img src="./assets/icons/chain.svg" width="20" alt="" /> [ETHmachine](https://github.com/DenisHumen/ETHmachine)
 
-Toolkit for working with Ethereum networks — and more. Written so I never again have to click the same button on 40 wallets. ⭐ My most-starred act of laziness.
+Toolkit for working with Ethereum networks — and more. Written so I never again have to click the same button on 40 wallets. <img src="./assets/icons/star.svg" width="14" alt="" /> My most-starred act of laziness.
 
 </td>
 <td width="50%" valign="top">
 
-### 💾 [DiskWipe.IO](https://github.com/DenisHumen/DiskWipe.IO)
+### <img src="./assets/icons/disk.svg" width="20" alt="" /> [DiskWipe.IO](https://github.com/DenisHumen/DiskWipe.IO)
 
 A stylish `TypeScript` tool for checking drive health with exportable reports. Tells you your disk is dying — politely, and in a nice UI.
 
@@ -117,14 +126,14 @@ A stylish `TypeScript` tool for checking drive health with exportable reports. T
 <tr>
 <td width="50%" valign="top">
 
-### 🧊 [MineAdmin](https://github.com/DenisHumen/MineAdmin)
+### <img src="./assets/icons/cube.svg" width="20" alt="" /> [MineAdmin](https://github.com/DenisHumen/MineAdmin)
 
-Modern web dashboard for Minecraft server automation: one-click install, web terminal, live resource monitoring. Running a Minecraft server like a Fortune 500 datacenter. 🧱
+Modern web dashboard for Minecraft server automation: one-click install, web terminal, live resource monitoring. Running a Minecraft server like a Fortune 500 datacenter.
 
 </td>
 <td width="50%" valign="top">
 
-### 📇 [OpenCRM](https://github.com/DenisHumen/OpenCRM)
+### <img src="./assets/icons/crm.svg" width="20" alt="" /> [OpenCRM](https://github.com/DenisHumen/OpenCRM)
 
 Open-source CRM for small businesses. Because every "simple client spreadsheet" eventually becomes a database, whether you planned for it or not.
 
@@ -144,7 +153,7 @@ Open-source CRM for small businesses. Because every "simple client spreadsheet" 
 
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
 
-## `04` &nbsp; Traffic / Stats
+## <img src="./assets/icons/chart.svg" width="22" alt="" /> &nbsp;`04` &nbsp; Traffic / Stats
 
 <div align="center">
 
@@ -162,7 +171,7 @@ Open-source CRM for small businesses. Because every "simple client spreadsheet" 
 
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
 
-## `05` &nbsp; Contribution Snake
+## <img src="./assets/icons/snake.svg" width="22" alt="" /> &nbsp;`05` &nbsp; Contribution Snake
 
 <div align="center">
 
@@ -172,13 +181,13 @@ Open-source CRM for small businesses. Because every "simple client spreadsheet" 
   <img alt="Contribution snake" src="https://raw.githubusercontent.com/DenisHumen/DenisHumen/output/snake.svg" />
 </picture>
 
-<sub>🐍 eats commits · leaves nothing behind · unlike my browser tabs</sub>
+<sub>eats commits · leaves nothing behind · unlike my browser tabs</sub>
 
 </div>
 
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
 
-## `06` &nbsp; Layer 08 — Misc
+## <img src="./assets/icons/shell.svg" width="22" alt="" /> &nbsp;`06` &nbsp; Layer 08 — Misc
 
 ```console
 $ whoami
@@ -205,7 +214,7 @@ telegram: @DenisHumen
 
 <br/>
 
-> *"Present day. Present time."* 🌐
+> <img src="./assets/icons/globe.svg" width="15" alt="" />&nbsp; *"Present day. Present time."*
 >
 > If you're not remembered, you never existed — luckily `git log` remembers everything. Even the commits called `fix`.
 
@@ -213,6 +222,6 @@ telegram: @DenisHumen
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-<sub>⚡ Built in the wired · Ukraine 🇺🇦 · <code>protocol 7 // always on</code></sub>
+<sub><img src="./assets/icons/bolt.svg" width="13" alt="" /> Built in the wired · <img src="./assets/icons/ua.svg" width="17" alt="Ukraine" /> Ukraine · <code>protocol 7 // always on</code></sub>
 
 </div>

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="DenisHumen — Network, Security, Systems">
-  <title>DenisHumen // connected to the Wired</title>
+  <title>DenisHumen // the wires are humming — everyone is connected</title>
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -14,6 +14,12 @@
       <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
     </radialGradient>
 
+    <radialGradient id="nodeGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#22d3ee" stop-opacity="0.13"/>
+      <stop offset="65%"  stop-color="#22d3ee" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
     <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
       <stop offset="55%"  stop-color="#000000" stop-opacity="0"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0.75"/>
@@ -23,6 +29,13 @@
       <stop offset="0%"   stop-color="#7dd3fc" stop-opacity="0"/>
       <stop offset="50%"  stop-color="#7dd3fc" stop-opacity="0.10"/>
       <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="humFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="12%"  stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="80%"  stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
     </linearGradient>
 
     <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
@@ -46,6 +59,7 @@
     </filter>
 
     <clipPath id="sliceBand"><rect x="0" y="126" width="1200" height="18"/></clipPath>
+    <clipPath id="humClip"><rect x="60" y="205" width="760" height="32"/></clipPath>
 
     <style>
       .mono { font-family: "SFMono-Regular", "DejaVu Sans Mono", "Liberation Mono", Consolas, monospace; }
@@ -84,8 +98,9 @@
       @keyframes blink   { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
       @keyframes flicker { 0%,100% { opacity: .92 } 47% { opacity: .92 } 48% { opacity: .55 } 49% { opacity: .95 } 92% { opacity: .70 } 93% { opacity: .92 } }
       @keyframes drift   { 0% { transform: translateY(-70px) } 100% { transform: translateY(310px) } }
-      @keyframes ping    { 0% { r: 26; opacity: .85 } 100% { r: 120; opacity: 0 } }
       @keyframes hum     { 0%,100% { opacity: .25 } 50% { opacity: .6 } }
+      @keyframes scroll  { 0% { transform: translateX(0) } 100% { transform: translateX(-100px) } }
+      @keyframes buzz    { 0%,100% { transform: translateY(0) } 25% { transform: translateY(0.6px) } 60% { transform: translateY(-0.5px) } }
 
       .gR    { animation: shiftR 7s steps(1,end) infinite; }
       .gC    { animation: shiftC 7s steps(1,end) infinite; }
@@ -93,10 +108,9 @@
       .cur   { animation: blink 1.05s steps(1,end) infinite; }
       .crt   { animation: flicker 5.5s ease-in-out infinite; }
       .sweep { animation: drift 6.5s linear infinite; }
-      .p1    { animation: ping 3.6s ease-out infinite; }
-      .p2    { animation: ping 3.6s ease-out infinite 1.2s; }
-      .p3    { animation: ping 3.6s ease-out infinite 2.4s; }
       .hum   { animation: hum 3.2s ease-in-out infinite; }
+      .wave  { animation: scroll 1.9s linear infinite; }
+      .buzz  { animation: buzz 0.28s steps(2,end) infinite; }
     </style>
   </defs>
 
@@ -105,16 +119,16 @@
   <rect width="1200" height="300" fill="url(#grid)"/>
   <rect width="1200" height="300" fill="url(#glow)"/>
 
-  <!-- ── the Wired: poles + sagging power lines ─────────────── -->
-  <g stroke="#243040" fill="none" stroke-width="1.6" opacity="0.85">
-    <path d="M0 78 Q 150 118 300 76"/>
-    <path d="M300 76 Q 450 116 600 74"/>
-    <path d="M600 74 Q 760 114 920 78"/>
-    <path d="M920 78 Q 1060 116 1200 80"/>
-    <path d="M0 96 Q 150 140 300 94" opacity="0.6"/>
-    <path d="M300 94 Q 450 138 600 92" opacity="0.6"/>
-    <path d="M600 92 Q 760 136 920 96" opacity="0.6"/>
-    <path d="M920 96 Q 1060 138 1200 98" opacity="0.6"/>
+  <!-- ── the wires (humming) ────────────────────────────────── -->
+  <g class="buzz">
+    <g stroke="#243040" fill="none" stroke-width="1.6" opacity="0.85">
+      <path d="M0 78 Q 150 118 300 76 Q 450 116 600 74 Q 760 114 920 78 Q 1060 116 1200 80"/>
+      <path d="M0 96 Q 150 140 300 94 Q 450 138 600 92 Q 760 136 920 96 Q 1060 138 1200 98" opacity="0.6"/>
+    </g>
+    <g stroke="#22d3ee" fill="none" stroke-width="1.6" opacity="0.10">
+      <path d="M0 78 Q 150 118 300 76 Q 450 116 600 74 Q 760 114 920 78 Q 1060 116 1200 80"/>
+    </g>
+    <circle r="2.1" fill="#7dd3fc" opacity="0"><animateMotion dur="11s" begin="0.0s" repeatCount="indefinite" path="M0 78 Q 150 118 300 76 Q 450 116 600 74 Q 760 114 920 78 Q 1060 116 1200 80"/><animate attributeName="opacity" values="0;0.95;0.95;0" keyTimes="0;0.05;0.93;1" dur="11s" begin="0.0s" repeatCount="indefinite"/></circle><circle r="2.1" fill="#7dd3fc" opacity="0"><animateMotion dur="11s" begin="4.0s" repeatCount="indefinite" path="M0 78 Q 150 118 300 76 Q 450 116 600 74 Q 760 114 920 78 Q 1060 116 1200 80"/><animate attributeName="opacity" values="0;0.95;0.95;0" keyTimes="0;0.05;0.93;1" dur="11s" begin="4.0s" repeatCount="indefinite"/></circle><circle r="2.1" fill="#7dd3fc" opacity="0"><animateMotion dur="11s" begin="7.6s" repeatCount="indefinite" path="M0 78 Q 150 118 300 76 Q 450 116 600 74 Q 760 114 920 78 Q 1060 116 1200 80"/><animate attributeName="opacity" values="0;0.95;0.95;0" keyTimes="0;0.05;0.93;1" dur="11s" begin="7.6s" repeatCount="indefinite"/></circle><circle r="1.8" fill="#67e8f9" opacity="0"><animateMotion dur="13s" begin="1.8s" repeatCount="indefinite" path="M1200 98 Q 1060 138 920 96 Q 760 136 600 92 Q 450 138 300 94 Q 150 140 0 96"/><animate attributeName="opacity" values="0;0.75;0.75;0" keyTimes="0;0.05;0.93;1" dur="13s" begin="1.8s" repeatCount="indefinite"/></circle><circle r="1.8" fill="#67e8f9" opacity="0"><animateMotion dur="13s" begin="8.2s" repeatCount="indefinite" path="M1200 98 Q 1060 138 920 96 Q 760 136 600 92 Q 450 138 300 94 Q 150 140 0 96"/><animate attributeName="opacity" values="0;0.75;0.75;0" keyTimes="0;0.05;0.93;1" dur="13s" begin="8.2s" repeatCount="indefinite"/></circle><circle r="1.6" fill="#ff2d55" opacity="0"><animateMotion dur="15s" begin="5.0s" repeatCount="indefinite" path="M1200 80 Q 1060 116 920 78 Q 760 114 600 74 Q 450 116 300 76 Q 150 118 0 78"/><animate attributeName="opacity" values="0;0.5;0.5;0" keyTimes="0;0.05;0.93;1" dur="15s" begin="5.0s" repeatCount="indefinite"/></circle>
   </g>
 
   <g fill="#141a24" stroke="#212a38" stroke-width="1">
@@ -134,25 +148,17 @@
     </g>
   </g>
 
-  <!-- ── right side: node / signal ping ─────────────────────── -->
-  <g transform="translate(1046,148)">
-    <circle r="120" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.10"/>
-    <circle r="86"  fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.14"/>
-    <circle r="52"  fill="none" stroke="#22d3ee" stroke-width="0.9" opacity="0.20"/>
-    <circle r="26" fill="none" stroke="#22d3ee" stroke-width="1.2">
-      <animate attributeName="r" values="26;120" dur="3.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.85;0" dur="3.6s" repeatCount="indefinite"/>
+  <!-- ── the Wired: people hanging off the lines, talking ───── -->
+  <g>
+    <ellipse cx="1028" cy="188" rx="168" ry="86" fill="url(#nodeGlow)"/>
+    <line x1="1019.1" y1="115.5" x2="1019.1" y2="134.6" stroke="#22d3ee" stroke-width="0.9" stroke-dasharray="2 4" opacity="0.3"/><circle r="1.6" fill="#7dd3fc" opacity="0"><animateMotion dur="2.80s" begin="0.00s" repeatCount="indefinite" path="M1019.1 115.5 L1019.1 134.6"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.75;1" dur="2.80s" begin="0.00s" repeatCount="indefinite"/></circle><line x1="986.8" y1="111.4" x2="986.8" y2="147.9" stroke="#22d3ee" stroke-width="0.9" stroke-dasharray="2 4" opacity="0.3"/><circle r="1.6" fill="#7dd3fc" opacity="0"><animateMotion dur="3.30s" begin="1.10s" repeatCount="indefinite" path="M986.8 111.4 L986.8 147.9"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.75;1" dur="3.30s" begin="1.10s" repeatCount="indefinite"/></circle><line x1="943.8" y1="102.5" x2="943.8" y2="149.9" stroke="#22d3ee" stroke-width="0.9" stroke-dasharray="2 4" opacity="0.3"/><circle r="1.6" fill="#7dd3fc" opacity="0"><animateMotion dur="3.80s" begin="2.20s" repeatCount="indefinite" path="M943.8 102.5 L943.8 149.9"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.75;1" dur="3.80s" begin="2.20s" repeatCount="indefinite"/></circle>
+    <g stroke="#2a6a80" stroke-width="0.95" opacity="0.8"><line x1="1028" y1="188" x2="1067.4" y2="219.5"/><line x1="1028" y1="188" x2="1032.7" y2="225.2"/><line x1="1028" y1="188" x2="1019.1" y2="141.6"/><line x1="1028" y1="188" x2="988.8" y2="195.3"/><line x1="929.3" y1="198.6" x2="943.8" y2="156.9"/><line x1="929.3" y1="198.6" x2="895.8" y2="181.2"/><line x1="1111.7" y1="173.0" x2="1162.7" y2="182.7"/><line x1="1111.7" y1="173.0" x2="1076.9" y2="163.5"/><line x1="1111.7" y1="173.0" x2="1098.4" y2="204.5"/><line x1="1067.4" y1="219.5" x2="1032.7" y2="225.2"/><line x1="1067.4" y1="219.5" x2="1098.4" y2="204.5"/><line x1="943.8" y1="156.9" x2="895.8" y2="181.2"/><line x1="943.8" y1="156.9" x2="986.8" y2="154.9"/><line x1="1132.6" y1="211.3" x2="1162.7" y2="182.7"/><line x1="1132.6" y1="211.3" x2="1098.4" y2="204.5"/><line x1="1076.9" y1="163.5" x2="1098.4" y2="204.5"/><line x1="984.7" y1="230.6" x2="1032.7" y2="225.2"/><line x1="984.7" y1="230.6" x2="988.8" y2="195.3"/><line x1="1019.1" y1="141.6" x2="986.8" y2="154.9"/><line x1="988.8" y1="195.3" x2="986.8" y2="154.9"/></g>
+    <g opacity="0.5"><line x1="1028" y1="188" x2="1067.4" y2="219.5" stroke="#67e8f9" stroke-width="1"><animate attributeName="opacity" values="0;0.5;0" dur="2.60s" begin="0.00s" repeatCount="indefinite"/></line><line x1="1028" y1="188" x2="1019.1" y2="141.6" stroke="#67e8f9" stroke-width="1"><animate attributeName="opacity" values="0;0.5;0" dur="2.83s" begin="0.37s" repeatCount="indefinite"/></line><line x1="929.3" y1="198.6" x2="943.8" y2="156.9" stroke="#67e8f9" stroke-width="1"><animate attributeName="opacity" values="0;0.5;0" dur="3.06s" begin="0.74s" repeatCount="indefinite"/></line><line x1="1111.7" y1="173.0" x2="1162.7" y2="182.7" stroke="#67e8f9" stroke-width="1"><animate attributeName="opacity" values="0;0.5;0" dur="3.29s" begin="1.11s" repeatCount="indefinite"/></line><line x1="1111.7" y1="173.0" x2="1098.4" y2="204.5" stroke="#67e8f9" stroke-width="1"><animate attributeName="opacity" values="0;0.5;0" dur="3.52s" begin="1.48s" repeatCount="indefinite"/></line><line x1="1067.4" y1="219.5" x2="1098.4" y2="204.5" stroke="#67e8f9" stroke-width="1"><animate attributeName="opacity" values="0;0.5;0" dur="3.75s" begin="1.85s" repeatCount="indefinite"/></line><line x1="943.8" y1="156.9" x2="986.8" y2="154.9" stroke="#67e8f9" stroke-width="1"><animate attributeName="opacity" values="0;0.5;0" dur="3.98s" begin="2.22s" repeatCount="indefinite"/></line><line x1="1132.6" y1="211.3" x2="1098.4" y2="204.5" stroke="#67e8f9" stroke-width="1"><animate attributeName="opacity" values="0;0.5;0" dur="4.21s" begin="2.59s" repeatCount="indefinite"/></line><line x1="984.7" y1="230.6" x2="1032.7" y2="225.2" stroke="#67e8f9" stroke-width="1"><animate attributeName="opacity" values="0;0.5;0" dur="4.44s" begin="2.96s" repeatCount="indefinite"/></line><line x1="1019.1" y1="141.6" x2="986.8" y2="154.9" stroke="#67e8f9" stroke-width="1"><animate attributeName="opacity" values="0;0.5;0" dur="4.67s" begin="3.33s" repeatCount="indefinite"/></line></g>
+    <circle r="1.9" fill="#a5f3fc" opacity="0"><animateMotion dur="1.90s" begin="0.00s" repeatCount="indefinite" path="M1067.4 219.5 L1028 188"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.8;1" dur="1.90s" begin="0.00s" repeatCount="indefinite"/></circle><circle r="1.9" fill="#a5f3fc" opacity="0"><animateMotion dur="2.07s" begin="0.31s" repeatCount="indefinite" path="M1028 188 L1019.1 141.6"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.8;1" dur="2.07s" begin="0.31s" repeatCount="indefinite"/></circle><circle r="1.9" fill="#a5f3fc" opacity="0"><animateMotion dur="2.24s" begin="0.62s" repeatCount="indefinite" path="M929.3 198.6 L943.8 156.9"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.8;1" dur="2.24s" begin="0.62s" repeatCount="indefinite"/></circle><circle r="1.9" fill="#a5f3fc" opacity="0"><animateMotion dur="2.41s" begin="0.93s" repeatCount="indefinite" path="M1162.7 182.7 L1111.7 173.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.8;1" dur="2.41s" begin="0.93s" repeatCount="indefinite"/></circle><circle r="1.9" fill="#a5f3fc" opacity="0"><animateMotion dur="2.58s" begin="1.24s" repeatCount="indefinite" path="M1111.7 173.0 L1098.4 204.5"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.8;1" dur="2.58s" begin="1.24s" repeatCount="indefinite"/></circle><circle r="1.9" fill="#a5f3fc" opacity="0"><animateMotion dur="2.75s" begin="1.55s" repeatCount="indefinite" path="M1067.4 219.5 L1098.4 204.5"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.8;1" dur="2.75s" begin="1.55s" repeatCount="indefinite"/></circle><circle r="1.9" fill="#a5f3fc" opacity="0"><animateMotion dur="2.92s" begin="1.86s" repeatCount="indefinite" path="M986.8 154.9 L943.8 156.9"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.8;1" dur="2.92s" begin="1.86s" repeatCount="indefinite"/></circle><circle r="1.9" fill="#a5f3fc" opacity="0"><animateMotion dur="3.09s" begin="2.17s" repeatCount="indefinite" path="M1132.6 211.3 L1098.4 204.5"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.8;1" dur="3.09s" begin="2.17s" repeatCount="indefinite"/></circle><circle r="1.9" fill="#a5f3fc" opacity="0"><animateMotion dur="3.26s" begin="2.48s" repeatCount="indefinite" path="M984.7 230.6 L1032.7 225.2"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.8;1" dur="3.26s" begin="2.48s" repeatCount="indefinite"/></circle><circle r="1.9" fill="#a5f3fc" opacity="0"><animateMotion dur="3.43s" begin="2.79s" repeatCount="indefinite" path="M986.8 154.9 L1019.1 141.6"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.8;1" dur="3.43s" begin="2.79s" repeatCount="indefinite"/></circle>
+    <g transform="translate(1028,188) scale(1.5)" stroke="#67e8f9" stroke-width="1.5" fill="none" opacity="0.95"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(929.3,198.6) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(1111.7,173.0) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(1067.4,219.5) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(943.8,156.9) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(1132.6,211.3) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(1162.7,182.7) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(1076.9,163.5) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(984.7,230.6) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(1032.7,225.2) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(1019.1,141.6) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(988.8,195.3) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(895.8,181.2) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(986.8,154.9) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g><g transform="translate(1098.4,204.5) scale(1.12)" stroke="#5ad0e6" stroke-width="1.4" fill="none" opacity="0.72"><circle cx="0" cy="-3.2" r="2.4"/><path d="M-4.5 4.6a4.5 4.5 0 0 1 9 0" stroke-linecap="round"/></g>
+    <circle cx="1028" cy="188" r="13" fill="#22d3ee" opacity="0.16" filter="url(#soft)">
+      <animate attributeName="opacity" values="0.10;0.30;0.10" dur="3.4s" repeatCount="indefinite"/>
     </circle>
-    <circle r="26" fill="none" stroke="#22d3ee" stroke-width="1.2">
-      <animate attributeName="r" values="26;120" dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.85;0" dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="26" fill="none" stroke="#67e8f9" stroke-width="1.2">
-      <animate attributeName="r" values="26;120" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.85;0" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="5" fill="#67e8f9"/>
-    <circle r="14" fill="#22d3ee" opacity="0.18" filter="url(#soft)"/>
   </g>
 
   <!-- ── type ───────────────────────────────────────────────── -->
@@ -168,8 +174,16 @@
       </g>
     </g>
 
-    <text class="mono" x="63" y="204" fill="#5b6b7d" font-size="16" letter-spacing="7">NETWORKS &#183; SECURITY &#183; SYSTEMS</text>
+    <text class="mono" x="63" y="200" fill="#5b6b7d" font-size="16" letter-spacing="7">NETWORKS &#183; SECURITY &#183; SYSTEMS</text>
   </g>
+
+  <!-- ── the hum of the wires (oscilloscope trace) ──────────── -->
+  <g clip-path="url(#humClip)">
+    <g class="wave">
+      <path d="M-140.0 220.84 L-138.0 219.49 L-136.0 217.93 L-134.0 216.46 L-132.0 215.34 L-130.0 214.70 L-128.0 214.55 L-126.0 214.71 L-124.0 214.95 L-122.0 215.08 L-120.0 215.00 L-118.0 214.77 L-116.0 214.57 L-114.0 214.66 L-112.0 215.23 L-110.0 216.34 L-108.0 217.92 L-106.0 219.71 L-104.0 221.43 L-102.0 222.80 L-100.0 223.67 L-98.0 224.08 L-96.0 224.18 L-94.0 224.21 L-92.0 224.39 L-90.0 224.82 L-88.0 225.45 L-86.0 226.11 L-84.0 226.55 L-82.0 226.57 L-80.0 226.11 L-78.0 225.25 L-76.0 224.22 L-74.0 223.29 L-72.0 222.71 L-70.0 222.61 L-68.0 222.93 L-66.0 223.49 L-64.0 224.01 L-62.0 224.26 L-60.0 224.12 L-58.0 223.62 L-56.0 222.93 L-54.0 222.27 L-52.0 221.86 L-50.0 221.77 L-48.0 221.94 L-46.0 222.16 L-44.0 222.17 L-42.0 221.76 L-40.0 220.84 L-38.0 219.49 L-36.0 217.93 L-34.0 216.46 L-32.0 215.34 L-30.0 214.70 L-28.0 214.55 L-26.0 214.71 L-24.0 214.95 L-22.0 215.08 L-20.0 215.00 L-18.0 214.77 L-16.0 214.57 L-14.0 214.66 L-12.0 215.23 L-10.0 216.34 L-8.0 217.92 L-6.0 219.71 L-4.0 221.43 L-2.0 222.80 L0.0 223.67 L2.0 224.08 L4.0 224.18 L6.0 224.21 L8.0 224.39 L10.0 224.82 L12.0 225.45 L14.0 226.11 L16.0 226.55 L18.0 226.57 L20.0 226.11 L22.0 225.25 L24.0 224.22 L26.0 223.29 L28.0 222.71 L30.0 222.61 L32.0 222.93 L34.0 223.49 L36.0 224.01 L38.0 224.26 L40.0 224.12 L42.0 223.62 L44.0 222.93 L46.0 222.27 L48.0 221.86 L50.0 221.77 L52.0 221.94 L54.0 222.16 L56.0 222.17 L58.0 221.76 L60.0 220.84 L62.0 219.49 L64.0 217.93 L66.0 216.46 L68.0 215.34 L70.0 214.70 L72.0 214.55 L74.0 214.71 L76.0 214.95 L78.0 215.08 L80.0 215.00 L82.0 214.77 L84.0 214.57 L86.0 214.66 L88.0 215.23 L90.0 216.34 L92.0 217.92 L94.0 219.71 L96.0 221.43 L98.0 222.80 L100.0 223.67 L102.0 224.08 L104.0 224.18 L106.0 224.21 L108.0 224.39 L110.0 224.82 L112.0 225.45 L114.0 226.11 L116.0 226.55 L118.0 226.57 L120.0 226.11 L122.0 225.25 L124.0 224.22 L126.0 223.29 L128.0 222.71 L130.0 222.61 L132.0 222.93 L134.0 223.49 L136.0 224.01 L138.0 224.26 L140.0 224.12 L142.0 223.62 L144.0 222.93 L146.0 222.27 L148.0 221.86 L150.0 221.77 L152.0 221.94 L154.0 222.16 L156.0 222.17 L158.0 221.76 L160.0 220.84 L162.0 219.49 L164.0 217.93 L166.0 216.46 L168.0 215.34 L170.0 214.70 L172.0 214.55 L174.0 214.71 L176.0 214.95 L178.0 215.08 L180.0 215.00 L182.0 214.77 L184.0 214.57 L186.0 214.66 L188.0 215.23 L190.0 216.34 L192.0 217.92 L194.0 219.71 L196.0 221.43 L198.0 222.80 L200.0 223.67 L202.0 224.08 L204.0 224.18 L206.0 224.21 L208.0 224.39 L210.0 224.82 L212.0 225.45 L214.0 226.11 L216.0 226.55 L218.0 226.57 L220.0 226.11 L222.0 225.25 L224.0 224.22 L226.0 223.29 L228.0 222.71 L230.0 222.61 L232.0 222.93 L234.0 223.49 L236.0 224.01 L238.0 224.26 L240.0 224.12 L242.0 223.62 L244.0 222.93 L246.0 222.27 L248.0 221.86 L250.0 221.77 L252.0 221.94 L254.0 222.16 L256.0 222.17 L258.0 221.76 L260.0 220.84 L262.0 219.49 L264.0 217.93 L266.0 216.46 L268.0 215.34 L270.0 214.70 L272.0 214.55 L274.0 214.71 L276.0 214.95 L278.0 215.08 L280.0 215.00 L282.0 214.77 L284.0 214.57 L286.0 214.66 L288.0 215.23 L290.0 216.34 L292.0 217.92 L294.0 219.71 L296.0 221.43 L298.0 222.80 L300.0 223.67 L302.0 224.08 L304.0 224.18 L306.0 224.21 L308.0 224.39 L310.0 224.82 L312.0 225.45 L314.0 226.11 L316.0 226.55 L318.0 226.57 L320.0 226.11 L322.0 225.25 L324.0 224.22 L326.0 223.29 L328.0 222.71 L330.0 222.61 L332.0 222.93 L334.0 223.49 L336.0 224.01 L338.0 224.26 L340.0 224.12 L342.0 223.62 L344.0 222.93 L346.0 222.27 L348.0 221.86 L350.0 221.77 L352.0 221.94 L354.0 222.16 L356.0 222.17 L358.0 221.76 L360.0 220.84 L362.0 219.49 L364.0 217.93 L366.0 216.46 L368.0 215.34 L370.0 214.70 L372.0 214.55 L374.0 214.71 L376.0 214.95 L378.0 215.08 L380.0 215.00 L382.0 214.77 L384.0 214.57 L386.0 214.66 L388.0 215.23 L390.0 216.34 L392.0 217.92 L394.0 219.71 L396.0 221.43 L398.0 222.80 L400.0 223.67 L402.0 224.08 L404.0 224.18 L406.0 224.21 L408.0 224.39 L410.0 224.82 L412.0 225.45 L414.0 226.11 L416.0 226.55 L418.0 226.57 L420.0 226.11 L422.0 225.25 L424.0 224.22 L426.0 223.29 L428.0 222.71 L430.0 222.61 L432.0 222.93 L434.0 223.49 L436.0 224.01 L438.0 224.26 L440.0 224.12 L442.0 223.62 L444.0 222.93 L446.0 222.27 L448.0 221.86 L450.0 221.77 L452.0 221.94 L454.0 222.16 L456.0 222.17 L458.0 221.76 L460.0 220.84 L462.0 219.49 L464.0 217.93 L466.0 216.46 L468.0 215.34 L470.0 214.70 L472.0 214.55 L474.0 214.71 L476.0 214.95 L478.0 215.08 L480.0 215.00 L482.0 214.77 L484.0 214.57 L486.0 214.66 L488.0 215.23 L490.0 216.34 L492.0 217.92 L494.0 219.71 L496.0 221.43 L498.0 222.80 L500.0 223.67 L502.0 224.08 L504.0 224.18 L506.0 224.21 L508.0 224.39 L510.0 224.82 L512.0 225.45 L514.0 226.11 L516.0 226.55 L518.0 226.57 L520.0 226.11 L522.0 225.25 L524.0 224.22 L526.0 223.29 L528.0 222.71 L530.0 222.61 L532.0 222.93 L534.0 223.49 L536.0 224.01 L538.0 224.26 L540.0 224.12 L542.0 223.62 L544.0 222.93 L546.0 222.27 L548.0 221.86 L550.0 221.77 L552.0 221.94 L554.0 222.16 L556.0 222.17 L558.0 221.76 L560.0 220.84 L562.0 219.49 L564.0 217.93 L566.0 216.46 L568.0 215.34 L570.0 214.70 L572.0 214.55 L574.0 214.71 L576.0 214.95 L578.0 215.08 L580.0 215.00 L582.0 214.77 L584.0 214.57 L586.0 214.66 L588.0 215.23 L590.0 216.34 L592.0 217.92 L594.0 219.71 L596.0 221.43 L598.0 222.80 L600.0 223.67 L602.0 224.08 L604.0 224.18 L606.0 224.21 L608.0 224.39 L610.0 224.82 L612.0 225.45 L614.0 226.11 L616.0 226.55 L618.0 226.57 L620.0 226.11 L622.0 225.25 L624.0 224.22 L626.0 223.29 L628.0 222.71 L630.0 222.61 L632.0 222.93 L634.0 223.49 L636.0 224.01 L638.0 224.26 L640.0 224.12 L642.0 223.62 L644.0 222.93 L646.0 222.27 L648.0 221.86 L650.0 221.77 L652.0 221.94 L654.0 222.16 L656.0 222.17 L658.0 221.76 L660.0 220.84 L662.0 219.49 L664.0 217.93 L666.0 216.46 L668.0 215.34 L670.0 214.70 L672.0 214.55 L674.0 214.71 L676.0 214.95 L678.0 215.08 L680.0 215.00 L682.0 214.77 L684.0 214.57 L686.0 214.66 L688.0 215.23 L690.0 216.34 L692.0 217.92 L694.0 219.71 L696.0 221.43 L698.0 222.80 L700.0 223.67 L702.0 224.08 L704.0 224.18 L706.0 224.21 L708.0 224.39 L710.0 224.82 L712.0 225.45 L714.0 226.11 L716.0 226.55 L718.0 226.57 L720.0 226.11 L722.0 225.25 L724.0 224.22 L726.0 223.29 L728.0 222.71 L730.0 222.61 L732.0 222.93 L734.0 223.49 L736.0 224.01 L738.0 224.26 L740.0 224.12 L742.0 223.62 L744.0 222.93 L746.0 222.27 L748.0 221.86 L750.0 221.77 L752.0 221.94 L754.0 222.16 L756.0 222.17 L758.0 221.76 L760.0 220.84 L762.0 219.49 L764.0 217.93 L766.0 216.46 L768.0 215.34 L770.0 214.70 L772.0 214.55 L774.0 214.71 L776.0 214.95 L778.0 215.08 L780.0 215.00 L782.0 214.77 L784.0 214.57 L786.0 214.66 L788.0 215.23 L790.0 216.34 L792.0 217.92 L794.0 219.71 L796.0 221.43 L798.0 222.80 L800.0 223.67 L802.0 224.08 L804.0 224.18 L806.0 224.21 L808.0 224.39 L810.0 224.82 L812.0 225.45 L814.0 226.11 L816.0 226.55 L818.0 226.57 L820.0 226.11 L822.0 225.25 L824.0 224.22 L826.0 223.29 L828.0 222.71 L830.0 222.61 L832.0 222.93 L834.0 223.49 L836.0 224.01 L838.0 224.26 L840.0 224.12 L842.0 223.62 L844.0 222.93 L846.0 222.27 L848.0 221.86 L850.0 221.77 L852.0 221.94 L854.0 222.16 L856.0 222.17 L858.0 221.76 L860.0 220.84 L862.0 219.49 L864.0 217.93 L866.0 216.46 L868.0 215.34 L870.0 214.70 L872.0 214.55 L874.0 214.71 L876.0 214.95 L878.0 215.08 L880.0 215.00 L882.0 214.77 L884.0 214.57 L886.0 214.66 L888.0 215.23 L890.0 216.34 L892.0 217.92 L894.0 219.71 L896.0 221.43 L898.0 222.80 L900.0 223.67" fill="none" stroke="url(#humFade)" stroke-width="1.3"/>
+    </g>
+  </g>
+  <text class="mono" x="828" y="225" font-size="10.5" letter-spacing="2" fill="#2c4653">hum // 50hz</text>
 
   <!-- ── hud frame ──────────────────────────────────────────── -->
   <g stroke="#22d3ee" stroke-width="1.6" fill="none" opacity="0.55">
@@ -180,13 +194,14 @@
   </g>
 
   <!-- ── status bar ─────────────────────────────────────────── -->
-  <line x1="60" y1="238" x2="1140" y2="238" stroke="#1c2733" stroke-width="1"/>
-  <g class="mono" font-size="12.5" letter-spacing="2.2" fill="#3d5563">
-    <text x="60"  y="262">[ layer:07 ]</text>
-    <text x="196" y="262">[ proto: tcp/tls ]</text>
-    <text x="382" y="262">[ loc: ua ]</text>
-    <text x="500" y="262">[ lang: py &#183; rs &#183; ts &#183; sh ]</text>
-    <text x="790" y="262" fill="#22d3ee" class="hum">[ status: focusing ]</text>
+  <line x1="60" y1="243" x2="1140" y2="243" stroke="#1c2733" stroke-width="1"/>
+  <g class="mono" font-size="12" letter-spacing="1.5" fill="#3d5563">
+    <text x="60"  y="266">[ layer:07 ]</text>
+    <text x="186" y="266">[ proto: tcp/tls ]</text>
+    <text x="360" y="266">[ loc: ua ]</text>
+    <text x="470" y="266">[ lang: py &#183; rs &#183; ts &#183; sh ]</text>
+    <text x="726" y="266" fill="#22d3ee" class="hum">[ status: focusing ]</text>
+    <text x="1140" y="266" text-anchor="end" fill="#2c4653">everyone is connected</text>
   </g>
   <text class="mono" x="1140" y="86" font-size="13" letter-spacing="2.4" fill="#3d5563" text-anchor="end">present day, present time</text>
 
