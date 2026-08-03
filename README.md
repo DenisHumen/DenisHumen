@@ -2,7 +2,7 @@
 
 <img src="./assets/banner.svg" width="100%" alt="DenisHumen — Networks · Security · Systems" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3200&pause=700&color=22D3EE&center=true&vCenter=true&width=760&height=42&lines=Network+%26+Security+Engineer+%2F%2F+Systems+Dev;Rust+when+it+has+to+survive.+Python+when+it+has+to+ship.;Automating+myself+out+of+manual+labor%2C+one+script+at+a+time;No+matter+where+you+go%2C+everyone+is+connected." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3200&pause=700&color=22D3EE&center=true&vCenter=true&width=760&height=42&lines=Network+%26+Security+Engineer+%2F%2F+Systems+Dev;Rust+when+it+has+to+survive.+Python+when+it+has+to+ship.;Automating+myself+out+of+manual+labor%2C+one+script+at+a+time;Close+the+world.+Open+the+nExt.;No+matter+where+you+go%2C+everyone+is+connected." alt="Typing SVG" />
 
 <br/>
 
@@ -43,9 +43,9 @@ Most of what I build exists because I refused to do something manually twice:
 </td>
 <td width="36%" align="center" valign="middle">
 
-<img src="./assets/lain.png" width="230" alt="Navi" />
+<img src="./assets/lain-wired.svg" width="300" alt="lain — she is watching the wired" />
 
-<sub><code>layer 07 // connected</code></sub>
+<sub><code>layer 07 // she is watching</code></sub>
 
 </td>
 </tr>
@@ -189,6 +189,10 @@ Open-source CRM for small businesses. Because every "simple client spreadsheet" 
 
 ## <img src="./assets/icons/shell.svg" width="22" alt="" /> &nbsp;`06` &nbsp; Layer 08 — Misc
 
+<table>
+<tr>
+<td width="62%" valign="middle">
+
 ```console
 $ whoami
 denis // fan of network technologies
@@ -210,6 +214,17 @@ $ ping me
 telegram: @DenisHumen
 ```
 
+</td>
+<td width="38%" align="center" valign="middle">
+
+<img src="./assets/navi.svg" width="230" alt="Navi terminal" />
+
+<sub><code>navi // online</code></sub>
+
+</td>
+</tr>
+</table>
+
 <div align="center">
 
 <br/>
@@ -220,7 +235,7 @@ telegram: @DenisHumen
 
 <br/>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/wired-footer.svg" width="100%" alt="close the world — open the nExt" />
 
 <sub><img src="./assets/icons/bolt.svg" width="13" alt="" /> Built in the wired · <img src="./assets/icons/ua.svg" width="17" alt="Ukraine" /> Ukraine · <code>protocol 7 // always on</code></sub>
 
