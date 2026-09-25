@@ -33,7 +33,7 @@ Most of what I build exists because I refused to do something manually twice:
 <img src="./assets/icons/route.svg" width="17" alt="" />&nbsp; **Balancers** that route around dead providers<br/>
 <img src="./assets/icons/bolt.svg" width="17" alt="" />&nbsp; **Node infrastructure** that installs itself with one command
 
-**Currently in the wired with** — [The Blackwall](https://github.com/DenisHumen/The-Blackwall) (real-time network defense) · [vlb](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer) (multi-provider traffic balancer in Rust) · [OpenCRM](https://github.com/DenisHumen/OpenCRM).
+**Currently in the wired with** — [AceDeck](https://github.com/DenisHumen/ace-step-deck) (local AI music studio for ACE-Step 1.5) · [The Blackwall](https://github.com/DenisHumen/The-Blackwall) (Linux gateway control panel) · [vlb](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer) (multi-uplink failover gateway in Rust) · [OpenCRM](https://github.com/DenisHumen/OpenCRM).
 
 <img src="./assets/icons/python.svg" width="16" alt="" />&nbsp; `Python` for logic &nbsp;&nbsp;
 <img src="./assets/icons/rust.svg" width="16" alt="" />&nbsp; `Rust` when it has to survive<br/>
@@ -94,61 +94,97 @@ Most of what I build exists because I refused to do something manually twice:
 <tr>
 <td width="50%" valign="top">
 
-### <img src="./assets/icons/wall.svg" width="20" alt="" /> [The Blackwall](https://github.com/DenisHumen/The-Blackwall)
+<a href="https://github.com/DenisHumen/ace-step-deck"><img src="https://raw.githubusercontent.com/DenisHumen/ace-step-deck/main/docs/assets/banner.png" alt="AceDeck" width="100%" /></a>
 
-Network security management. Real-time traffic monitoring, automatic threat blocking and attack visualization on `Python + React + nftables`. Your digital fortress between the corporate network and the chaos of the Net. **Stay protected, netrunner.**
+### <img src="./assets/icons/music.svg" width="20" alt="" /> [AceDeck](https://github.com/DenisHumen/ace-step-deck)
+
+Desktop studio for <b>ACE-Step 1.5</b> — local AI music generation on your own GPU. One-click install, a queue that renders songs while you sleep, cover &amp; repaint, a stability stress test and an MCP server so Claude can drive it. `Electron + React`. <b>Newest signal in the wired.</b>
 
 </td>
 <td width="50%" valign="top">
+
+<a href="https://github.com/DenisHumen/The-Blackwall"><img src="https://raw.githubusercontent.com/DenisHumen/The-Blackwall/main/docs/assets/banner.png" alt="The Blackwall" width="100%" /></a>
+
+### <img src="./assets/icons/wall.svg" width="20" alt="" /> [The Blackwall](https://github.com/DenisHumen/The-Blackwall)
+
+Self-hosted control panel for a Linux gateway: live system &amp; traffic dashboard, multi-WAN load balancing with health checks and automatic failover, one-click updates. `FastAPI + React`. <b>Stay protected, netrunner.</b>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/DenisHumen/vlb-Virtual-Load-Balancer"><img src="https://raw.githubusercontent.com/DenisHumen/vlb-Virtual-Load-Balancer/main/docs/assets/banner.png" alt="vlb — Virtual Load Balancer" width="100%" /></a>
 
 ### <img src="./assets/icons/route.svg" width="20" alt="" /> [vlb — Virtual Load Balancer](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer)
 
-Lightweight `Rust` balancer that spreads traffic across multiple providers. Small binary, no daemons with opinions, no config file that needs its own documentation.
+Multi-uplink failover gateway in `Rust`: probes every ISP (ICMP, DNS, content canary, throughput) and moves the default route the moment one dies. btop-style TUI, per-client stats. No config file that needs its own documentation.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
+
+<a href="https://github.com/DenisHumen/ETHmachine"><img src="https://raw.githubusercontent.com/DenisHumen/ETHmachine/main/docs/assets/banner.png" alt="ETHmachine" width="100%" /></a>
 
 ### <img src="./assets/icons/chain.svg" width="20" alt="" /> [ETHmachine](https://github.com/DenisHumen/ETHmachine)
 
-Toolkit for working with Ethereum networks — and more. Written so I never again have to click the same button on 40 wallets. <img src="./assets/icons/star.svg" width="14" alt="" /> My most-starred act of laziness.
-
-</td>
-<td width="50%" valign="top">
-
-### <img src="./assets/icons/disk.svg" width="20" alt="" /> [DiskWipe.IO](https://github.com/DenisHumen/DiskWipe.IO)
-
-A stylish `TypeScript` tool for checking drive health with exportable reports. Tells you your disk is dying — politely, and in a nice UI.
+Terminal toolkit for multi-wallet crypto routine: balances across 29 EVM networks, DeBank, transfers, Relay bridge, CEX withdrawals (OKX, Binance, Bitget, MEXC). Written so I never again click the same button on 40 wallets. <img src="./assets/icons/star.svg" width="14" alt="" /> My most-starred act of laziness.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### <img src="./assets/icons/cube.svg" width="20" alt="" /> [MineAdmin](https://github.com/DenisHumen/MineAdmin)
+<a href="https://github.com/DenisHumen/OpenCRM"><img src="https://raw.githubusercontent.com/DenisHumen/OpenCRM/main/docs/assets/banner.png" alt="OpenCRM" width="100%" /></a>
 
-Modern web dashboard for Minecraft server automation: one-click install, web terminal, live resource monitoring. Running a Minecraft server like a Fortune 500 datacenter.
+### <img src="./assets/icons/crm.svg" width="20" alt="" /> [OpenCRM](https://github.com/DenisHumen/OpenCRM)
+
+Self-hosted CRM for small businesses: job boards, clients, stock with barcodes, orders, printed forms and finance — one command installs it, and it updates and backs itself up. Because every "simple client spreadsheet" eventually becomes a database.
 
 </td>
 <td width="50%" valign="top">
 
-### <img src="./assets/icons/crm.svg" width="20" alt="" /> [OpenCRM](https://github.com/DenisHumen/OpenCRM)
+<a href="https://github.com/DenisHumen/MineAdmin"><img src="https://raw.githubusercontent.com/DenisHumen/MineAdmin/main/docs/assets/banner.png" alt="MineAdmin" width="100%" /></a>
 
-Open-source CRM for small businesses. Because every "simple client spreadsheet" eventually becomes a database, whether you planned for it or not.
+### <img src="./assets/icons/cube.svg" width="20" alt="" /> [MineAdmin](https://github.com/DenisHumen/MineAdmin)
+
+Web panel for Minecraft servers: one-click Vanilla / Paper / Purpur / Fabric / Forge, web console, file manager, backups with SFTP upload and live monitoring. Running a Minecraft server like a Fortune 500 datacenter.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/DenisHumen/DiskWipe.IO"><img src="https://raw.githubusercontent.com/DenisHumen/DiskWipe.IO/main/docs/assets/banner.png" alt="DiskWipe.IO" width="100%" /></a>
+
+### <img src="./assets/icons/disk.svg" width="20" alt="" /> [DiskWipe.IO](https://github.com/DenisHumen/DiskWipe.IO)
+
+S.M.A.R.T. health monitor and secure formatter for Windows &amp; Linux — CrystalDiskInfo-style readouts, USB bridges, full sector erase and PDF reports. `Tauri 2 + Rust`. Tells you your disk is dying — politely.
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/DenisHumen/Universal-Video-Downloader-"><img src="https://raw.githubusercontent.com/DenisHumen/Universal-Video-Downloader-/main/docs/assets/banner.png" alt="Universal Video Downloader" width="100%" /></a>
+
+### <img src="./assets/icons/play.svg" width="20" alt="" /> [Universal Video Downloader](https://github.com/DenisHumen/Universal-Video-Downloader-)
+
+Desktop downloader on `yt-dlp + ffmpeg` with automatic stream detection for almost any site, trimming, conversion, title search and series auto-download. `Electron + React`.
 
 </td>
 </tr>
 </table>
 
 <div align="center">
-<sub>Also in the archive:
-<a href="https://github.com/DenisHumen/Universal-Video-Downloader-">Universal Video Downloader</a> ·
+<sub>More in the wired:
+<a href="https://github.com/DenisHumen/telegram_export">TgVault</a> ·
+<a href="https://github.com/DenisHumen/iphone-webcam">ClearCam (iphone-webcam)</a> ·
 <a href="https://github.com/DenisHumen/Anisync">Anisync</a> ·
-<a href="https://github.com/DenisHumen/proxy_checker">proxy_checker</a> ·
-<a href="https://github.com/DenisHumen/CryptoProjectChecker">CryptoProjectChecker</a> ·
 <a href="https://github.com/DenisHumen/toolkit">toolkit</a> ·
-<a href="https://github.com/DenisHumen/Scripts">Scripts</a></sub>
+<a href="https://github.com/DenisHumen/krokosha-site">krokosha-site</a> ·
+<a href="https://github.com/DenisHumen/opinionwinners">opinionwinners</a> ·
+<a href="https://github.com/DenisHumen/abstract_withdraw">abstract_withdraw</a> ·
+<a href="https://github.com/DenisHumen/Scripts">Scripts</a> ·
+<a href="https://github.com/DenisHumen/proxy_checker">proxy_checker</a> ·
+<a href="https://github.com/DenisHumen/CryptoProjectChecker">CryptoProjectChecker</a></sub>
 </div>
 
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
@@ -165,7 +201,9 @@ Open-source CRM for small businesses. Because every "simple client spreadsheet" 
 <img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=DenisHumen&theme=github_dark" alt="Repos per language" />
 <img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=DenisHumen&theme=github_dark&utcOffset=3" alt="Productive time" />
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=DenisHumen&bg_color=0D1117&color=9FB3C8&line=22D3EE&point=FF2D55&area=true&area_color=22D3EE&hide_border=true&custom_title=Packet%20flow%20//%20last%2031%20days" alt="Activity graph" />
+<img height="185" src="https://streak-stats.demolab.com/?user=DenisHumen&theme=dark&background=0D1117&border=0D1117&ring=22D3EE&fire=FF2D55&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=22D3EE&sideLabels=9FB3C8&dates=6E7681&hide_border=true" alt="Contribution streak" />
+
+<img width="98%" src="https://ghchart.rshah.org/22d3ee/DenisHumen" alt="Contribution heatmap" />
 
 </div>
 
