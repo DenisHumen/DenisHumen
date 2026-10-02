@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="DenisHumen — Networks · Security · Systems" />
+<img src="./assets/banner.svg" width="100%" alt="DenisHumen - Networks · Security · Systems" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3200&pause=700&color=22D3EE&center=true&vCenter=true&width=760&height=42&lines=Network+%26+Security+Engineer+%2F%2F+Systems+Dev;Rust+when+it+has+to+survive.+Python+when+it+has+to+ship.;Automating+myself+out+of+manual+labor%2C+one+script+at+a+time;Close+the+world.+Open+the+nExt.;No+matter+where+you+go%2C+everyone+is+connected." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3200&pause=700&color=22D3EE&center=true&vCenter=true&width=760&height=42&lines=Network+%26+Infrastructure+Engineer+%2F%2F+DevOps+%2F%2F+Automation;Business+automation+%2B+Web3%2C+checked+before+signing.;Rust+when+it+has+to+survive.+Python+when+it+has+to+ship.;Automating+myself+out+of+manual+labor%2C+one+script+at+a+time;Close+the+world.+Open+the+nExt.;No+matter+where+you+go%2C+everyone+is+connected." alt="Typing SVG" />
 
 <br/>
 
@@ -31,9 +31,13 @@ Most of what I build exists because I refused to do something manually twice:
 
 <img src="./assets/icons/shield.svg" width="17" alt="" />&nbsp; **Firewalls** that block things while I sleep<br/>
 <img src="./assets/icons/route.svg" width="17" alt="" />&nbsp; **Balancers** that route around dead providers<br/>
-<img src="./assets/icons/bolt.svg" width="17" alt="" />&nbsp; **Node infrastructure** that installs itself with one command
+<img src="./assets/icons/bolt.svg" width="17" alt="" />&nbsp; **Node infrastructure** that installs itself with one command<br/>
+<img src="./assets/icons/crm.svg" width="17" alt="" />&nbsp; **CRM & bots** that keep a business running: orders, stock, approvals, reports<br/>
+<img src="./assets/icons/chain.svg" width="17" alt="" />&nbsp; **Web3 tooling** that moves crypto across 29+ networks and checks every transaction before signing
 
-**Currently in the wired with** — [AceDeck](https://github.com/DenisHumen/ace-step-deck) (local AI music studio for ACE-Step 1.5) · [The Blackwall](https://github.com/DenisHumen/The-Blackwall) (Linux gateway control panel) · [vlb](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer) (multi-uplink failover gateway in Rust) · [OpenCRM](https://github.com/DenisHumen/OpenCRM).
+These days that means two more things besides networks and servers: **business process automation** (my own CRM/ERP in production, Telegram bots, Shopify and API integrations) and **Web3 automation**: balances, batch transfers, fund consolidation, exchange withdrawals and cross-chain bridges.
+
+**Currently in the wired with** - [AceDeck](https://github.com/DenisHumen/ace-step-deck) (local AI music studio for ACE-Step 1.5) · [The Blackwall](https://github.com/DenisHumen/The-Blackwall) (Linux gateway control panel) · [vlb](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer) (multi-uplink failover gateway in Rust) · [OpenCRM](https://github.com/DenisHumen/OpenCRM).
 
 <img src="./assets/icons/python.svg" width="16" alt="" />&nbsp; `Python` for logic &nbsp;&nbsp;
 <img src="./assets/icons/rust.svg" width="16" alt="" />&nbsp; `Rust` when it has to survive<br/>
@@ -43,7 +47,7 @@ Most of what I build exists because I refused to do something manually twice:
 </td>
 <td width="36%" align="center" valign="middle">
 
-<img src="./assets/lain-wired.svg" width="300" alt="lain — she is watching the wired" />
+<img src="./assets/lain-wired.svg" width="300" alt="lain - she is watching the wired" />
 
 <sub><code>layer 07 // she is watching</code></sub>
 
@@ -82,6 +86,15 @@ Most of what I build exists because I refused to do something manually twice:
 ![Ethereum](https://img.shields.io/badge/Ethereum-05060A?style=for-the-badge&logo=ethereum&logoColor=22D3EE)
 ![GitHub Actions](https://img.shields.io/badge/Actions-05060A?style=for-the-badge&logo=githubactions&logoColor=22D3EE)
 
+**Automation & Web3**
+
+![FastAPI](https://img.shields.io/badge/FastAPI-05060A?style=for-the-badge&logo=fastapi&logoColor=22D3EE)
+![MySQL](https://img.shields.io/badge/MySQL-05060A?style=for-the-badge&logo=mysql&logoColor=22D3EE)
+![Telegram Bots](https://img.shields.io/badge/Telegram%20Bots-05060A?style=for-the-badge&logo=telegram&logoColor=22D3EE)
+![Shopify](https://img.shields.io/badge/Shopify-05060A?style=for-the-badge&logo=shopify&logoColor=22D3EE)
+![Solana](https://img.shields.io/badge/Solana-05060A?style=for-the-badge&logo=solana&logoColor=22D3EE)
+![web3.py](https://img.shields.io/badge/web3.py%20%2F%20viem-05060A?style=for-the-badge&logo=web3dotjs&logoColor=22D3EE)
+
 </div>
 
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
@@ -98,7 +111,7 @@ Most of what I build exists because I refused to do something manually twice:
 
 ### <img src="./assets/icons/music.svg" width="20" alt="" /> [AceDeck](https://github.com/DenisHumen/ace-step-deck)
 
-Desktop studio for <b>ACE-Step 1.5</b> — local AI music generation on your own GPU. One-click install, a queue that renders songs while you sleep, cover &amp; repaint, a stability stress test and an MCP server so Claude can drive it. `Electron + React`. <b>Newest signal in the wired.</b>
+Desktop studio for <b>ACE-Step 1.5</b> - local AI music generation on your own GPU. One-click install, a queue that renders songs while you sleep, cover &amp; repaint, a stability stress test and an MCP server so Claude can drive it. `Electron + React`. <b>Newest signal in the wired.</b>
 
 </td>
 <td width="50%" valign="top">
@@ -114,9 +127,9 @@ Self-hosted control panel for a Linux gateway: live system &amp; traffic dashboa
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/DenisHumen/vlb-Virtual-Load-Balancer"><img src="https://raw.githubusercontent.com/DenisHumen/vlb-Virtual-Load-Balancer/main/docs/assets/banner.png" alt="vlb — Virtual Load Balancer" width="100%" /></a>
+<a href="https://github.com/DenisHumen/vlb-Virtual-Load-Balancer"><img src="https://raw.githubusercontent.com/DenisHumen/vlb-Virtual-Load-Balancer/main/docs/assets/banner.png" alt="vlb - Virtual Load Balancer" width="100%" /></a>
 
-### <img src="./assets/icons/route.svg" width="20" alt="" /> [vlb — Virtual Load Balancer](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer)
+### <img src="./assets/icons/route.svg" width="20" alt="" /> [vlb - Virtual Load Balancer](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer)
 
 Multi-uplink failover gateway in `Rust`: probes every ISP (ICMP, DNS, content canary, throughput) and moves the default route the moment one dies. btop-style TUI, per-client stats. No config file that needs its own documentation.
 
@@ -138,7 +151,7 @@ Terminal toolkit for multi-wallet crypto routine: balances across 29 EVM network
 
 ### <img src="./assets/icons/crm.svg" width="20" alt="" /> [OpenCRM](https://github.com/DenisHumen/OpenCRM)
 
-Self-hosted CRM for small businesses: job boards, clients, stock with barcodes, orders, printed forms and finance — one command installs it, and it updates and backs itself up. Because every "simple client spreadsheet" eventually becomes a database.
+Self-hosted CRM for small businesses: job boards, clients, stock with barcodes, orders, printed forms and finance - one command installs it, and it updates and backs itself up. Because every "simple client spreadsheet" eventually becomes a database.
 
 </td>
 <td width="50%" valign="top">
@@ -158,7 +171,7 @@ Web panel for Minecraft servers: one-click Vanilla / Paper / Purpur / Fabric / F
 
 ### <img src="./assets/icons/disk.svg" width="20" alt="" /> [DiskWipe.IO](https://github.com/DenisHumen/DiskWipe.IO)
 
-S.M.A.R.T. health monitor and secure formatter for Windows &amp; Linux — CrystalDiskInfo-style readouts, USB bridges, full sector erase and PDF reports. `Tauri 2 + Rust`. Tells you your disk is dying — politely.
+S.M.A.R.T. health monitor and secure formatter for Windows &amp; Linux - CrystalDiskInfo-style readouts, USB bridges, full sector erase and PDF reports. `Tauri 2 + Rust`. Tells you your disk is dying - politely.
 
 </td>
 <td width="50%" valign="top">
@@ -225,7 +238,7 @@ Desktop downloader on `yt-dlp + ffmpeg` with automatic stream detection for almo
 
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
 
-## <img src="./assets/icons/shell.svg" width="22" alt="" /> &nbsp;`06` &nbsp; Layer 08 — Misc
+## <img src="./assets/icons/shell.svg" width="22" alt="" /> &nbsp;`06` &nbsp; Layer 08 - Misc
 
 <table>
 <tr>
@@ -233,7 +246,7 @@ Desktop downloader on `yt-dlp + ffmpeg` with automatic stream detection for almo
 
 ```console
 $ whoami
-denis // fan of network technologies
+denis // network engineer who automates everything
 
 $ uptime
 too long, mostly focusing
@@ -269,11 +282,11 @@ telegram: @DenisHumen
 
 > <img src="./assets/icons/globe.svg" width="15" alt="" />&nbsp; *"Present day. Present time."*
 >
-> If you're not remembered, you never existed — luckily `git log` remembers everything. Even the commits called `fix`.
+> If you're not remembered, you never existed - luckily `git log` remembers everything. Even the commits called `fix`.
 
 <br/>
 
-<img src="./assets/wired-footer.svg" width="100%" alt="close the world — open the nExt" />
+<img src="./assets/wired-footer.svg" width="100%" alt="close the world - open the nExt" />
 
 <sub><img src="./assets/icons/bolt.svg" width="13" alt="" /> Built in the wired · <img src="./assets/icons/ua.svg" width="17" alt="Ukraine" /> Ukraine · <code>protocol 7 // always on</code></sub>
 
