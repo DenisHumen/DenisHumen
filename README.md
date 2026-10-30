@@ -37,6 +37,8 @@ Most of what I build exists because I refused to do something manually twice:
 
 These days that means two more things besides networks and servers: **business process automation** (my own CRM/ERP in production, Telegram bots, Shopify and API integrations) and **Web3 automation**: balances, batch transfers, fund consolidation, exchange withdrawals and cross-chain bridges.
 
+**Contributor to** [Horizon](https://playhorizon.dev/) - Minecraft: Java Edition rebuilt from scratch in `Rust` ([horizon-rust/horizon](https://github.com/horizon-rust/horizon)).
+
 **Currently in the wired with** - [AceDeck](https://github.com/DenisHumen/ace-step-deck) (local AI music studio for ACE-Step 1.5) · [The Blackwall](https://github.com/DenisHumen/The-Blackwall) (Linux gateway control panel) · [vlb](https://github.com/DenisHumen/vlb-Virtual-Load-Balancer) (multi-uplink failover gateway in Rust) · [OpenCRM](https://github.com/DenisHumen/OpenCRM).
 
 <img src="./assets/icons/python.svg" width="16" alt="" />&nbsp; `Python` for logic &nbsp;&nbsp;
@@ -176,7 +178,7 @@ S.M.A.R.T. health monitor and secure formatter for Windows &amp; Linux - Crystal
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/DenisHumen/Universal-Video-Downloader-"><img src="https://raw.githubusercontent.com/DenisHumen/Universal-Video-Downloader-/main/docs/assets/banner.png" alt="Universal Video Downloader" width="100%" /></a>
+<a href="https://github.com/DenisHumen/Universal-Video-Downloader-"><img src="./assets/banners/uvd.png" alt="Universal Video Downloader" width="100%" /></a>
 
 ### <img src="./assets/icons/play.svg" width="20" alt="" /> [Universal Video Downloader](https://github.com/DenisHumen/Universal-Video-Downloader-)
 
@@ -202,7 +204,34 @@ Desktop downloader on `yt-dlp + ffmpeg` with automatic stream detection for almo
 
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
 
-## <img src="./assets/icons/chart.svg" width="22" alt="" /> &nbsp;`04` &nbsp; Traffic / Stats
+## <img src="./assets/icons/star.svg" width="22" alt="" /> &nbsp;`04` &nbsp; Open Source / Contributor
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://playhorizon.dev/"><img src="https://playhorizon.dev/og.png" alt="Horizon - the game you know, rebuilt in Rust" width="100%" /></a>
+
+</td>
+<td width="50%" valign="top">
+
+### <img src="./assets/icons/rust.svg" width="20" alt="" /> [Horizon](https://playhorizon.dev/)
+
+Minecraft: Java Edition 26.3 rewritten from scratch in `Rust`, checked against vanilla by 281 differential harnesses. I'm one of the contributors: I port vanilla behaviour detail by detail and fix things on Windows.
+
+[![Stars](https://img.shields.io/github/stars/horizon-rust/horizon?style=for-the-badge&logo=github&logoColor=22D3EE&labelColor=05060A&color=05060A)](https://github.com/horizon-rust/horizon)
+[![Site](https://img.shields.io/badge/playhorizon.dev-05060A?style=for-the-badge&logo=rust&logoColor=22D3EE)](https://playhorizon.dev/)
+[![My PRs](https://img.shields.io/badge/My%20PRs-05060A?style=for-the-badge&logo=git&logoColor=22D3EE)](https://github.com/horizon-rust/horizon/pulls?q=is%3Apr+author%3ADenisHumen)
+
+<sub>Golems that build in any orientation · frogs walking at vanilla's rate · buckets that pick up the water your eyes are in · armor stands that swing the hand · sleeping exactly 0.125 above the bed · a Windows fix for <code>rea_vanilla</code></sub>
+
+</td>
+</tr>
+</table>
+
+<div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
+
+## <img src="./assets/icons/chart.svg" width="22" alt="" /> &nbsp;`05` &nbsp; Traffic / Stats
 
 <div align="center">
 
@@ -215,24 +244,6 @@ Desktop downloader on `yt-dlp + ffmpeg` with automatic stream detection for almo
 <img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=DenisHumen&theme=github_dark&utcOffset=3" alt="Productive time" />
 
 <img height="185" src="https://streak-stats.demolab.com/?user=DenisHumen&theme=dark&background=0D1117&border=0D1117&ring=22D3EE&fire=FF2D55&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=22D3EE&sideLabels=9FB3C8&dates=6E7681&hide_border=true" alt="Contribution streak" />
-
-<img width="98%" src="https://ghchart.rshah.org/22d3ee/DenisHumen" alt="Contribution heatmap" />
-
-</div>
-
-<div align="center"><img src="./assets/divider.svg" width="100%" alt="" /></div>
-
-## <img src="./assets/icons/snake.svg" width="22" alt="" /> &nbsp;`05` &nbsp; Contribution Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DenisHumen/DenisHumen/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DenisHumen/DenisHumen/output/snake.svg" />
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/DenisHumen/DenisHumen/output/snake.svg" />
-</picture>
-
-<sub>eats commits · leaves nothing behind · unlike my browser tabs</sub>
 
 </div>
 
